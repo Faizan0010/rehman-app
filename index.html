@@ -1,0 +1,586 @@
+<!doctype html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Over Seas - Explore The World With Us</title>
+
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="logo/logo.png" type="image/x-icon" />
+  </head>
+  <style>
+    body {
+      direction: rtl;
+      text-align: right;
+    }
+
+    nav {
+      direction: rtl;
+    }
+
+    .hero,
+    .about,
+    .footer-container,
+    .destination-cards,
+    .services-container,
+    .testimonial-container {
+      direction: rtl;
+    }
+
+    .hero-buttons,
+    .footer-social,
+    .about-stats {
+      justify-content: flex-start;
+    }
+
+    .mobile-menu {
+      right: auto;
+      left: -100%;
+    }
+
+    .mobile-menu.active {
+      left: 0;
+    }
+
+    .header-buttons {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+.payment-methods {
+  margin-top: 25px;
+}
+
+.payment-methods p {
+  margin-bottom: 15px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.payment-logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  align-items: center;
+}
+
+.payment-logos img {
+  width: 58px;
+  height: 38px;
+  object-fit: contain;
+  background: white;
+  padding: 6px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.payment-logos img:hover {
+  transform: translateY(-4px) scale(1.05);
+}
+
+ .payment-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 40px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  background: linear-gradient(135deg, #06b6d4, #3b82f6, #8b5cf6);
+  box-shadow: 0 10px 25px rgba(59, 130, 246, 0.35);
+  transition: 0.3s ease;
+  text-decoration: none;
+}
+
+.payment-btn:hover {
+  transform: translateY(-4px) scale(1.03);
+}
+
+.payment-btn img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+    @media (max-width: 992px) {
+      .header-buttons {
+        display: none;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+
+      nav {
+        display: none;
+      }
+    }
+  </style>
+  <body>
+    <!-- =========================
+       HEADER
+  ========================= -->
+
+    <header>
+      <div class="logo"><img src="logo/logo.png" alt="" /></div>
+
+      <nav>
+        <a href="#home">الرئيسية</a>
+        <a href="#destinations">الوجهات</a>
+        <div class="nav-dropdown">
+          <a href="#services" class="nav-dropdown-toggle">
+            الخدمات
+            <i class="fa-solid fa-chevron-down"></i>
+          </a>
+
+          <div class="services-dropdown">
+            <a href="#services"><i class="fa-solid fa-file-invoice"></i> دفع الغرامات</a>
+            <a href="#services"><i class="fa-solid fa-id-card"></i> إجراءات الإقامة</a>
+            <a href="#services"><i class="fa-solid fa-plane-departure"></i> حجز السفر</a>
+            <a href="#services"><i class="fa-solid fa-hotel"></i> حجز الفنادق</a>
+            <a href="#services"><i class="fa-solid fa-passport"></i> حجز موعد التأشيرة</a>
+            <a href="#services"><i class="fa-solid fa-suitcase-rolling"></i> باقات العطلات</a>
+            <a href="#services"><i class="fa-solid fa-heart-pulse"></i> التأمين الصحي في ضمان</a>
+            <a href="#contact"><i class="fa-solid fa-headset"></i> تواصل معنا لأي استفسار</a>
+          </div>
+        </div>
+        <a href="#about">من نحن</a>
+        <a href="#contact">تواصل معنا</a>
+      </nav>
+
+      <div class="header-buttons">
+        <a
+          href="https://wa.me/971564630165"
+          class="btn header-btn"
+          target="_blank"
+        >
+          احجز الآن
+        </a>
+
+      <a
+  href="payment.html"
+  class="payment-btn"
+>
+  <img src="logo/tabby.png" alt="" />
+  اجعل الدفع أسهل
+</a>
+      </div>
+
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+
+    <!-- =========================
+       MOBILE MENU
+  ========================= -->
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#home">الرئيسية</a>
+      <a href="#destinations">الوجهات</a>
+      <a href="#services">الخدمات</a>
+      <div class="mobile-services">
+        <a href="#services"><i class="fa-solid fa-file-invoice"></i> دفع الغرامات</a>
+        <a href="#services"><i class="fa-solid fa-id-card"></i> إجراءات الإقامة</a>
+        <a href="#services"><i class="fa-solid fa-plane-departure"></i> حجز السفر</a>
+        <a href="#services"><i class="fa-solid fa-hotel"></i> حجز الفنادق</a>
+        <a href="#services"><i class="fa-solid fa-passport"></i> حجز موعد التأشيرة</a>
+        <a href="#services"><i class="fa-solid fa-suitcase-rolling"></i> باقات العطلات</a>
+        <a href="#services"><i class="fa-solid fa-heart-pulse"></i> التأمين الصحي في ضمان</a>
+        <a href="#contact"><i class="fa-solid fa-headset"></i> تواصل معنا لأي استفسار</a>
+      </div>
+      <a href="#about">من نحن</a>
+      <a href="#contact">تواصل معنا</a>
+      <a href="https://wa.me/971564630165" class="btn header-btn"> احجز الآن</a>
+  <a
+  href="payment.html"
+  class="payment-btn"
+>
+  <img src="logo/tabby.png" alt="" />
+  اجعل الدفع أسهل
+</a>
+    </div>
+
+    <!-- =========================
+       HERO
+  ========================= -->
+
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <h1>استكشف <span>العالم</span> معنا</h1>
+
+        <p>
+          اكتشف أجمل الوجهات السياحية، والرحلات الفاخرة، والمغامرات التي لا
+          تُنسى لعشاق السفر العصري.
+        </p>
+        <div class="hero-buttons">
+          <a href="https://wa.me/971564630165" class="btn">احجز الآن</a>
+        </div>
+      </div>
+
+    <div class="hero-card">
+
+  <div class="hero-card-logo">
+    <img src="logo/tabby.png" alt="" />
+  </div>
+
+  <h3>خدماتنا</h3>
+
+  <div class="hero-services">
+
+    <div class="service-item">
+      <h4>دفع الغرامات</h4>
+    </div>
+
+    <div class="service-item">
+      <h4>إجراءات الإقامة</h4>
+    </div>
+
+    <div class="service-item">
+      <h4>حجز السفر</h4>
+    </div>
+
+    <div class="service-item">
+      <h4>حجز الفنادق</h4>
+    </div>
+
+    <div class="service-item">
+      <h4>حجز موعد التأشيرة</h4>
+    </div>
+
+    <div class="service-item">
+      <h4>باقات العطلات</h4>
+    </div>
+
+    <div class="service-item">
+      <h4>التأمين الصحي في ضمان</h4>
+    </div>
+
+    <div class="service-item">
+      <h4>تواصل معنا لأي استفسار</h4>
+    </div>
+
+  </div>
+
+</div>
+    </section>
+
+    <!-- =========================
+       DESTINATIONS
+  ========================= -->
+
+    <section class="destinations" id="destinations">
+      <div class="section-title">
+        <h4>أفضل الوجهات</h4>
+        <h2>استكشف أجمل الأماكن</h2>
+      </div>
+
+      <div class="destination-cards">
+     <div class="destination-card">
+
+  <div class="destination-logo">
+    <img src="logo/tabby.png" alt="" />
+  </div>
+
+  <img
+    src="images/img3.avif"
+    alt=""
+  />
+
+  <div class="destination-content">
+    <h3>المالديف</h3>
+    <p>مياه صافية ومنتجعات فاخرة.</p>
+  </div>
+
+</div>
+
+        <div class="destination-card">
+            <div class="destination-logo">
+    <img src="logo/tabby.png" alt="" />
+  </div>
+          <img
+            src="images/img2.avif"
+            alt=""
+          />
+
+          <div class="destination-content">
+            <h3>باريس</h3>
+            <p>شوارع رومانسية ومعالم عالمية.</p>
+          </div>
+        </div>
+
+        <div class="destination-card">
+            <div class="destination-logo">
+    <img src="logo/tabby.png" alt="" />
+  </div>
+          <img
+            src="images/img1.avif"
+            alt=""
+          />
+
+          <div class="destination-content">
+            <h3>دبي</h3>
+            <p>تسوق فاخر وأفق مستقبلي مذهل.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+       SERVICES
+  ========================= -->
+
+    <section class="services" id="services">
+      <div class="section-title">
+        <h4>خدماتنا</h4>
+        <h2>لماذا تسافر معنا</h2>
+      </div>
+
+      <div class="services-container">
+        <div class="service-box">
+          <div class="icon">
+            <i class="fa-solid fa-plane-departure"></i>
+          </div>
+
+          <h3>حجز الطيران</h3>
+          <p>حجز سريع وأسعار مناسبة مع دعم مميز.</p>
+        </div>
+
+        <div class="service-box">
+          <div class="icon">
+            <i class="fa-solid fa-hotel"></i>
+          </div>
+
+          <h3>فنادق فاخرة</h3>
+          <p>إقامة في أفضل الفنادق والمنتجعات العالمية.</p>
+        </div>
+
+        <div class="service-box">
+          <div class="icon">
+            <i class="fa-solid fa-earth-americas"></i>
+          </div>
+          <h3>مرشد سياحي</h3>
+          <p>مرشدون محترفون لتجربة سفر لا تُنسى.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+       ABOUT
+  ========================= -->
+
+    <section class="about" id="about">
+      <div class="about-image">
+        <img
+          src="https://images.unsplash.com/photo-1527631746610-bca00a040d60?q=80&w=1200&auto=format&fit=crop"
+          alt=""
+        />
+      </div>
+
+      <div class="about-content">
+        <h4>من نحن</h4>
+
+        <h2>نصنع رحلات لا تُنسى</h2>
+
+        <p>
+          نساعد المسافرين على اكتشاف أجمل الوجهات حول العالم بكل راحة وفخامة
+          وتجارب مميزة.
+        </p>
+
+        <div class="about-stats">
+          <div>
+            <h3>+10 آلاف</h3>
+            <p>عميل سعيد</p>
+          </div>
+
+          <div>
+            <h3>+50</h3>
+            <p>وجهة سياحية</p>
+          </div>
+
+          <div>
+            <h3>+5</h3>
+            <p>سنوات من الخبرة</p>
+          </div>
+        </div>
+
+        <a href="#" class="btn">اعرف المزيد</a>
+      </div>
+    </section>
+
+    <!-- =========================
+       TESTIMONIALS
+  ========================= -->
+
+    <section class="testimonials">
+      <div class="section-title">
+        <h4>آراء العملاء</h4>
+        <h2>ماذا يقول عملاؤنا</h2>
+      </div>
+
+      <div class="testimonial-container">
+        <div class="testimonial-card">
+          <p>
+            "تجربة رائعة! كل شيء كان منظمًا بشكل مثالي والأماكن كانت مذهلة."
+          </p>
+
+          <div class="client">
+            <h3>سارة جونسون</h3>
+            <span>مسافرة</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <p>"أفضل شركة سفر تعاملت معها، خدمات ممتازة ودعم رائع."</p>
+
+          <div class="client">
+            <h3>مايكل لي</h3>
+            <span>مصور</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <p>"أنصح بها بشدة لكل من يبحث عن رحلات عصرية ومريحة."</p>
+
+          <div class="client">
+            <h3>إيما واتسون</h3>
+            <span>سائحة</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+       NEWSLETTER
+  ========================= -->
+
+    <section class="newsletter" id="contact">
+      <div class="newsletter-content">
+        <h2>خطط لرحلتك المثالية</h2>
+
+        <p>
+          تواصل مع خبراء السفر لدينا مباشرة عبر واتساب واحصل على أفضل عروض السفر
+          فورًا.
+        </p>
+
+        <a
+          href="https://wa.me/971564630165"
+          target="_blank"
+          class="whatsapp-btn"
+        >
+          <i class="fa-brands fa-whatsapp"></i>
+          تواصل عبر واتساب
+        </a>
+      </div>
+    </section>
+
+    <!-- =========================
+       FOOTER
+  ========================= -->
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-box">
+          <img src="logo/logo.png" alt="" />
+
+          <p>استكشف العالم براحة ومغامرات لا تُنسى.</p>
+
+          <div class="footer-social">
+            <a
+              href="https://www.instagram.com/overseastravel0?igsh=ZXh1cXppYXlhYWdu&utm_source=qr"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a
+              href="https://www.tiktok.com/@over.seas85?_r=1&_t=ZS-96LgNmwJuE8"
+            >
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+
+            <a href="mailto:overseastravel.contact@gmail.com">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+
+            <a href="tel:+971564630165">
+              <i class="fa-solid fa-phone"></i>
+            </a>
+          </div>
+
+         <div class="payment-methods">
+  <p>نقبل جميع وسائل الدفع</p>
+
+  <div class="payment-logos">
+    <img src="logo/visa.png" alt="Visa" />
+    <img src="logo/master.png" alt="Mastercard" />
+    <img src="logo/paypal.png" alt="PayPal" />
+    <img src="logo/amex.jpg" alt="Amex" />
+    <img src="logo/Google-Pay-logo.png" alt="Google Pay" />
+    <img src="logo/Apple_Pay_logo.svg.png" alt="Apple Pay" />
+    <img src="logo/tabby.png" alt="Apple Pay" />
+  </div>
+</div>
+        </div>
+
+        <div class="footer-box">
+          <h3>روابط سريعة</h3>
+
+          <a href="#home">الرئيسية</a>
+          <a href="#destinations">الرحلات</a>
+          <a href="#about">من نحن</a>
+          <a href="#contact">تواصل معنا</a>
+        </div>
+
+        <div class="footer-box">
+          <h3>الدعم</h3>
+
+          <a href="term-privacy.html">سياسة الخصوصية</a>
+          <a href="term-privacy.html">الشروط والأحكام</a>
+        </div>
+
+        <div class="footer-box">
+          <h3>التواصل</h3>
+
+          <a href="#">overseastravel.contact@gmail.com</a>
+          <a href="#">00971564630165</a>
+       <a href="#">Abu dhabi - al ain - next to remal mall - 3rd floor - building 83</a>
+
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Over Seas. All Rights Reserved.</p>
+        <p>
+          الرخصة التجارية
+          <a href="https://app.invest.dubai.ae/search-license">1621750</a>
+          موثقة من حكومة دبي
+        </p>
+      </div>
+    </footer>
+
+    <!-- =========================
+       JAVASCRIPT
+  ========================= -->
+
+    <script>
+      let hamburger = document.getElementById("hamburger");
+      let mobileMenu = document.getElementById("mobileMenu");
+
+      hamburger.addEventListener("click", function () {
+        mobileMenu.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>الشروط والأحكام</title>
+
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="logo/logo.png" type="image/x-icon" />
+  </head>
+
+  <style>
+    body {
+      direction: rtl;
+      text-align: right;
+    }
+
+    nav {
+      direction: rtl;
+    }
+
+    .hero,
+    .about,
+    .footer-container,
+    .destination-cards,
+    .services-container,
+    .testimonial-container {
+      direction: rtl;
+    }
+
+    .hero-buttons,
+    .footer-social,
+    .about-stats {
+      justify-content: flex-start;
+    }
+
+    .mobile-menu {
+      right: auto;
+      left: -100%;
+    }
+
+    .mobile-menu.active {
+      left: 0;
+    }
+
+    .header-buttons {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+.payment-methods {
+  margin-top: 25px;
+}
+
+.payment-methods p {
+  margin-bottom: 15px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.payment-logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  align-items: center;
+}
+
+.payment-logos img {
+  width: 58px;
+  height: 38px;
+  object-fit: contain;
+  background: white;
+  padding: 6px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.payment-logos img:hover {
+  transform: translateY(-4px) scale(1.05);
+}
+
+ .payment-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 40px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  background: linear-gradient(135deg, #06b6d4, #3b82f6, #8b5cf6);
+  box-shadow: 0 10px 25px rgba(59, 130, 246, 0.35);
+  transition: 0.3s ease;
+  text-decoration: none;
+}
+
+.payment-btn:hover {
+  transform: translateY(-4px) scale(1.03);
+}
+
+.payment-btn img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+    @media (max-width: 992px) {
+      .header-buttons {
+        display: none;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+
+      nav {
+        display: none;
+      }
+    }
+  </style>
+
+  <body>
+  <!-- =========================
+       HEADER
+  ========================= -->
+
+    <header>
+      <div class="logo"><img src="logo/logo.png" alt="" /></div>
+
+      <nav>
+        <a href="index.html#home">الرئيسية</a>
+        <a href="index.html#destinations">الوجهات</a>
+        <a href="index.html#services">الخدمات</a>
+        <a href="index.html#about">من نحن</a>
+        <a href="index.html#contact">تواصل معنا</a>
+      </nav>
+
+      <div class="header-buttons">
+        <a
+          href="https://wa.me/971564630165"
+          class="btn header-btn"
+          target="_blank"
+        >
+          احجز الآن
+        </a>
+
+   <a
+  href="payment.html"
+  class="payment-btn"
+>
+  <img src="logo/tabby.png" alt="" />
+  اجعل الدفع أسهل
+</a>
+      </div>
+
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+
+    <!-- =========================
+       MOBILE MENU
+  ========================= -->
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#home">الرئيسية</a>
+      <a href="#destinations">الوجهات</a>
+      <a href="#services">الخدمات</a>
+      <a href="#about">من نحن</a>
+      <a href="#contact">تواصل معنا</a>
+      <a href="https://wa.me/971564630165" class="btn header-btn"> احجز الآن</a>
+    <a
+  href="payment.html"
+  class="payment-btn"
+>
+  <img src="logo/tabby.png" alt="" />
+  اجعل الدفع أسهل
+</a>
+    </div>
+
+    <section class="faq-section">
+      <div class="section-title">
+        <h4>سياسة الخصوصية</h4>
+        <h2>الشروط والأحكام</h2>
+      </div>
+
+      <div class="faq-container">
+        <!-- FAQ ITEM -->
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>
+              <i class="fa-solid fa-shield-halved"></i>
+              سياسة الخصوصية
+            </h3>
+
+            <span class="faq-icon">
+              <i class="fa-solid fa-plus"></i>
+            </span>
+          </div>
+
+          <div class="faq-answer">
+            <p>
+              نحن نحترم خصوصيتك ونلتزم بحماية معلوماتك الشخصية. أي بيانات تقدمها
+              لنا، بما في ذلك الاسم ورقم الهاتف ومعلومات جواز السفر والبريد
+              الإلكتروني وتفضيلات السفر، سيتم استخدامها فقط لأغراض الحجز وخدمة
+              العملاء ومعاملات التأشيرات وتحسين تجربة السفر الخاصة بك.
+            </p>
+
+            <p>
+              لن يتم بيع معلوماتك أو تأجيرها أو مشاركتها مع أي جهة غير مصرح لها.
+              ومع ذلك، قد نشارك بعض البيانات الضرورية مع شركات الطيران أو
+              الفنادق أو السفارات أو الجهات الحكومية عند الحاجة لإتمام الحجز أو
+              الالتزام بالمتطلبات القانونية.
+            </p>
+
+            <p>
+              نستخدم أنظمة آمنة ومعايير حماية متقدمة للحفاظ على بياناتك من
+              الوصول غير المصرح به أو سوء الاستخدام أو التسريب. كما تتم معالجة
+              المدفوعات عبر بوابات دفع موثوقة وآمنة.
+            </p>
+
+            <p>
+              باستخدامك لموقعنا وخدماتنا، فإنك توافق على جمع واستخدام معلوماتك
+              وفقًا لسياسة الخصوصية هذه. إذا كانت لديك أي استفسارات بخصوص
+              بياناتك الشخصية، يمكنك التواصل معنا في أي وقت.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ ITEM -->
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>
+              <i class="fa-solid fa-file-contract"></i>
+              الشروط والأحكام
+            </h3>
+
+            <span class="faq-icon">
+              <i class="fa-solid fa-plus"></i>
+            </span>
+          </div>
+
+          <div class="faq-answer">
+            <p>
+              باستخدامك لخدمات السفر الخاصة بنا، فإنك توافق على الالتزام بسياسات
+              الحجز وشروط الدفع وقواعد الإلغاء وأنظمة السفر. ويتحمل العميل
+              مسؤولية تقديم معلومات صحيحة ودقيقة أثناء عملية الحجز.
+            </p>
+
+            <p>
+              جميع الحجوزات تخضع للتوفر والتأكيد. وقد تتغير الأسعار ومواعيد
+              الرحلات وتوفر الفنادق أو الباقات السياحية دون إشعار مسبق بسبب
+              سياسات شركات الطيران أو المواسم أو أي عوامل خارجية أخرى.
+            </p>
+
+            <p>
+              تعتبر الموافقات على التأشيرات وإجراءات الهجرة وتصاريح السفر
+              مسؤولية المسافر بالكامل. نحن نقدم المساعدة والإرشاد فقط ولا نضمن
+              الموافقة على التأشيرة أو الدخول إلى أي دولة.
+            </p>
+
+            <p>
+              قد تختلف سياسات الإلغاء والاسترداد حسب شركة الطيران أو الفندق أو
+              شركة الرحلات أو جهة إصدار التأشيرة. وقد يتم تطبيق رسوم خدمة أو
+              مبالغ غير قابلة للاسترداد في بعض الحالات.
+            </p>
+
+            <p>
+              يجب على المسافرين التأكد من حمل جوازات سفر وتأشيرات ووثائق سفر
+              سارية المفعول والالتزام بجميع قوانين السفر الدولية وأنظمة شركات
+              الطيران. ولا نتحمل مسؤولية أي تأخير أو خسائر أو ظروف خارجة عن
+              إرادتنا.
+            </p>
+
+            <p>
+              عند تأكيد الحجز معنا، فإنك تقر بأنك قرأت وفهمت ووافقت على جميع
+              الشروط والأحكام المذكورة.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <footer>
+      <div class="footer-container">
+        <div class="footer-box">
+          <img src="logo/logo.png" alt="" />
+
+          <p>استكشف العالم براحة ومغامرات لا تُنسى.</p>
+
+          <div class="footer-social">
+            <a
+              href="https://www.instagram.com/overseastravel0?igsh=ZXh1cXppYXlhYWdu&utm_source=qr"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a
+              href="https://www.tiktok.com/@over.seas85?_r=1&_t=ZS-96LgNmwJuE8"
+            >
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+
+            <a href="mailto:overseastravel.contact@gmail.com">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+
+            <a href="tel:+971564630165">
+              <i class="fa-solid fa-phone"></i>
+            </a>
+          </div>
+
+          <div class="payment-methods">
+            <p>نقبل جميع وسائل الدفع</p>
+
+           <div class="payment-logos">
+    <img src="logo/visa.png" alt="Visa" />
+    <img src="logo/master.png" alt="Mastercard" />
+    <img src="logo/paypal.png" alt="PayPal" />
+    <img src="logo/amex.jpg" alt="Amex" />
+    <img src="logo/Google-Pay-logo.png" alt="Google Pay" />
+    <img src="logo/Apple_Pay_logo.svg.png" alt="Apple Pay" />
+    <img src="logo/tabby.png" alt="Apple Pay" />
+  </div>
+          </div>
+        </div>
+
+        <div class="footer-box">
+          <h3>روابط سريعة</h3>
+
+          <a href="index.html#home">الرئيسية</a>
+          <a href="index.html#destinations">الرحلات</a>
+          <a href="index.html#about">من نحن</a>
+          <a href="index.html#contact">تواصل معنا</a>
+        </div>
+
+        <div class="footer-box">
+          <h3>الدعم</h3>
+
+          <a href="term-privacy.html">سياسة الخصوصية</a>
+          <a href="term-privacy.html">الشروط والأحكام</a>
+        </div>
+
+        <div class="footer-box">
+          <h3>التواصل</h3>
+
+          <a href="#">overseastravel.contact@gmail.com</a>
+          <a href="#">00971564630165</a>
+          <a href="#">Abu dhabi - al ain - next to remal mall - 3rd floor - building 83</a>
+
+ 
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Over Seas. All Rights Reserved.</p>
+        <p>
+          الرخصة التجارية
+          <a href="https://app.invest.dubai.ae/search-license">1621750</a>
+          موثقة من حكومة دبي
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      let faqItems = document.querySelectorAll(".faq-item");
+
+      faqItems.forEach(function (item) {
+        let question = item.querySelector(".faq-question");
+
+        question.addEventListener("click", function () {
+          item.classList.toggle("active");
+        });
+      });
+    </script>
+
+    <script>
+      let hamburger = document.getElementById("hamburger");
+      let mobileMenu = document.getElementById("mobileMenu");
+
+      hamburger.addEventListener("click", function () {
+        mobileMenu.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
