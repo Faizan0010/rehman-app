@@ -1,8 +1,0 @@
-{
-  "scripts": {
-    "start": "node server.js"
-  },
-  "dependencies": {
-    "nodemailer": "^9.0.0"
-  }
-}
